@@ -4,4 +4,4 @@ pybase64
 pillow
 numpy
 simpy.io
-tensorflow-cpu
+keras
