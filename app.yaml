@@ -1,0 +1,13 @@
+runtime: python38
+
+handlers:
+- url: /api/.*
+  script: auto
+
+- url: /$
+  static_files: static/index.html
+  upload: static/index.html
+
+
+- url: /
+  static_dir: static
