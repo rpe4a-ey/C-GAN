@@ -56,6 +56,9 @@ def photo():
     imgs_enc.append(gen_img)
     return jsonify(imgs_enc)
 
+@app.route('/')
+def root():
+    return app.send_static_file('index.html')
 
 
 if __name__ == '__main__':
